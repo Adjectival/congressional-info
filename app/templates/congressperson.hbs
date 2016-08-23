@@ -1,1 +1,14 @@
-{{outlet}}
+{{#each model.congressPersons.results as |congressPerson|}}
+<h1>Name: {{congressPerson.first_name}} {{congressPerson.last_name}}</h1>
+<h4>State: {{congressPerson.state_name}}</h4>
+<h4>Chamber: {{congressPerson.chamber}}</h4>
+<h4>Party: {{congressPerson.party}}</h4>
+<h4>Term: {{congressPerson.term_start}} - {{congressPerson.term_end}}</h4>
+
+{{/each}}
+
+{{stringyJSON model}}
+<h3>Committees</h3>
+{{#each model.committees.results as |committee|}}
+<h5>{{committee.name}}</h5>
+{{/each}}
