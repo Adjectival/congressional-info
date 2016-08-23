@@ -1,9 +1,13 @@
-<h2 id="title">
-  {{#link-to 'index'}}Legislator Lookup <i class="em em-hocho"><i class="em em-100"></i></i>{{/link-to}} |
-   {{#link-to 'committees'}}Committees List <i class="em em-hocho"><i class="em em-100"></i></i>{{/link-to}}
 
+<h2 id="title">
+  <i class="em em-hocho"><i class="em em-100"></i></i>
+  {{#link-to 'index'}}Legislator Lookup {{/link-to}} |
+  {{#link-to 'committees'}}Committees List {{/link-to}}
+  <i class="em em-hocho"><i class="em em-100"></i></i>
 </h2>
-{{outlet}}
+<div class="container">
+  {{outlet}}
+</div>
 <h1>
   <i class="em em-envelope"><i class="em em-syringe"></i></i>
 </h1>
