@@ -8,3 +8,7 @@
 
   <button class="btn btn-primary" {{action 'zipLookup'}}>Submit</button>
 </form>
+
+{{#if displayResults}}
+  {{result-tile legislators=legislators}}
+{{/if}}
