@@ -3,6 +3,6 @@
 {{#each model.committees.results as |results|}}
   {{#each results.members as |member|}}
     {{stringy-json member}}
-    <h3>{{#link-to 'congressperson' member.legislator.bioguide_id}}{{member.legislator.first_name}} {{member.legislator.last_name}}{{/link-to}}</h3>
+    {{congressperson-bare congressperson=member.legislator}}
   {{/each}}
 {{/each}}

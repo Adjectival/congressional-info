@@ -1,0 +1,12 @@
+<button class="btn-block btn-primary" {{action 'setChamber'}}>Swap Houses</button>
+{{#if isHouse}}
+  <h3>House</h3>
+  {{#each model.house.results as |committee|}}
+    <p>{{#link-to 'committee' committee.committee_id}}{{committee.name}}{{/link-to}}</p>
+  {{/each}}
+{{else}}
+  <h3>Senate</h3>
+  {{#each model.senate.results as |committee|}}
+    <p>{{#link-to 'committee' committee.committee_id}}{{committee.name}}{{/link-to}}</p>
+  {{/each}}
+{{/if}}
