@@ -10,5 +10,5 @@
 {{stringyJSON model}}
 <h3>Committees</h3>
 {{#each model.committees.results as |committee|}}
-<h5>{{committee.name}}</h5>
+<h5>{{#link-to 'committee' committee.committee_id}}{{committee.name}}{{/link-to}}</h5>
 {{/each}}
