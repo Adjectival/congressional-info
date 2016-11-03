@@ -5,7 +5,6 @@ export default Ember.Component.extend({
   isSubbed: false,
   actions: {
     seeSubs() {
-
       console.log(this.get('abcd'));
       this.set('subcommittees', "");
       this.set('isSubbed', !this.isSubbed);
